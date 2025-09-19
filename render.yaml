@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ashlynn-api
+    env: node
+    buildCommand: npm install
+    startCommand: node api/server.js
+    repo: https://github.com/dylanjlawrence77-ship-it/Ashlynn-
+    branch: main
+    rootDir: .
+    autoDeploy: true
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
